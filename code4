@@ -1,0 +1,6 @@
+import kotlinx.browser.document
+import react.create
+import react.dom.render
+fun main(args : Array<String>) {
+    println("Hello Github")
+}
