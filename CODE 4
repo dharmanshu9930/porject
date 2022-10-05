@@ -1,0 +1,22 @@
+#normal function
+def one(a):
+    return a+10
+print("on performing ",one(3))
+
+#performing function in function 
+def wage(hours):
+    return hours*25
+def bonus(hours):
+    return wage(hours)+50
+
+print(wage(4))
+print(bonus(4))
+
+# question 
+def money(m):
+    if(m>=10):
+        m=m+100
+        return m 
+    else:
+        print("save more money ")
+print(money(45))
