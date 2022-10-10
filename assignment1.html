@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          *{
+     margin: 0;
+     padding: 0;
+}
+#frame1{
+   background-color: orange;
+}
+#frame2{
+   background-color: red;
+}
+#frame3{
+   background-color: green;
+}
+
+#frame4{
+   background-color: skyblue;
+}
+</style>
+</head>
+<frameset rows="40%,15%,15%,*">
+     <frameset cols="*,*,*">
+          <frame id="frame4" name="frame1" src="" scrolling="no"/>
+          <frameset rows="*,*">
+          <frame id="frame4" name="frame2" src="" scrolling="no"/>
+          <frame id="frame3" name="frame3" src="" scrolling="no"/>
+          </frameset>
+
+          <frameset rows="*,*">
+               <frameset cols="40%,*">
+               <frame id="frame4" name="frame4" src="" scrolling="no"/>
+               <frame id="frame4" name="frame4" src="" scrolling="no"/>
+               </frameset>
+          <frame id="frame3" name="frame5" src="" scrolling="no"/>
+          </frameset>
+
+     </frameset>
+     <frameset cols="66.75%,*">
+     <frame id="frame1" name="frame6" scrolling="no"/>
+     <frame id="frame3" name="frame6" scrolling="no"/>
+     </frameset>
+
+     <frameset cols="33.35%,33.30%,*">
+     <frame id="frame2" name="frame7" scrolling="no"/>
+     <frame id="frame2" name="frame8" scrolling="no"/>
+     <frame id="frame3" name="frame8" scrolling="no"/>
+     </frameset>
+
+     <frameset cols="*,*,*">
+     <frame id="frame4" name="frame9" scrolling="no"/>
+     <frame id="frame2" name="frame10" scrolling="no"/>
+     <frame id="frame4" name="frame11" scrolling="no"/>
+     </frameset>
+
+</frameset>
+<body>
+     
+</body>
+</html>
