@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>1</title>
+</head>
+<body>
+     <script>
+          class Student{
+               static id=0;
+               constructor(name,sub1,sub2,sub3){
+                    this.id=Student.id++
+                    this.name=name
+                    this.sub1=sub1
+                    this.sub2=sub2
+                    this.sub3=sub3
+               }
+               disp()
+               {
+                    console.log(this.name+","+this.sub1+","+this.sub2+","+this.sub3)
+               }
+               result()
+               {
+                    let per =(this.sub1+this.sub2+this.sub3)/3
+                    console.log("Percentage:  "+per)
+                    if(per>40){
+                         console.log("pass")
+                    }
+                    else{
+                         console.log("fail")
+                    }
+               } 
+          }
+          ob= new Student("amit",40,20,10)
+          ob1= new Student("amita",35,78,100)
+          ob2= new Student("amitabh",19,24,67)
+
+          let obj_array=[ob,ob1,ob2]
+
+          for(let obj of obj_array){
+               obj.disp()
+               obj.result()
+          }
+     </script>
+</body>
+</html>
