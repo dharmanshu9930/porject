@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+# String Magnification
+#### In this project, I create a class where I'll create patter of each character of string
+=======
 // project histogram
 #include<iostream>
 #include<iomanip>
@@ -63,3 +67,4 @@ int main()
 	histogram(a,n);
 }
 
+>>>>>>> 7e110e50a3a464cdeaab119f633fcd29ceee08c0
