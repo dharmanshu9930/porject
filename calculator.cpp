@@ -23,7 +23,7 @@ int main() {
             cout << num1 << " / " << num2 << " = " << num1 / num2;
             break;
         default:
-            // operator is doesn't match any case constant (+, -, *, /)
+            // operator is doesn't match any case constant (+, -, *, /) / null
             cout << "Error! The operator is not correct";
             break;
     }
