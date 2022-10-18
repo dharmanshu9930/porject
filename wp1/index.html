@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <script>
+          class Patient{
+               static id=0;
+               constructor(name,Days_spend,Amount){
+                    this.id=Patient.id++
+                    this.name=name
+                    this.Days_spend=Days_spend
+                    this.Amount=Amount
+               }
+               disp()
+               {
+                    console.log(this.name+","+this.Days_spend+","+this.Amount)
+               }
+               result()
+               {
+                    let amount_per_day =(this.Amount/this.Days_spend)
+                    console.log("Amount per day:  "+amount_per_day)
+                    if(amount_per_day>1000){
+                         console.log("expensive")
+                    }
+                    else{
+                         console.log("reasonable")
+                    }
+               } 
+          }
+          ob= new Patient("amit",10,450000)
+          ob1= new Patient("amita",16,3400)
+          ob2= new Patient("amitabh",19,780000)
+
+          let obj_array=[ob,ob1,ob2]
+
+          for(let obj of obj_array){
+               obj.disp()
+               obj.result()
+          }
+     </script>
+</body>
+</html>
