@@ -1,0 +1,270 @@
+/* IMPORTING FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Faster+One&family=Fredericka+the+Great&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+/* VARIABLES */
+:root {
+  --body-bg-gradient-clr-1: black;
+  --body-bg-gradient-clr-2: transparent;
+  --body-bg-image: url(https://images.pexels.com/photos/2387532/pexels-photo-2387532.jpeg);
+
+  --card-bg-clr: rgba(255, 255, 255, 0.3);
+  --card-rounded-border: 1rem;
+
+  --tech-icon-bg-clr: rgba(255, 255, 255, 0.2);
+
+  --elements-rounded-border: 0.25rem;
+
+  --border-clr: rgba(255, 255, 255, 0.4);
+  --border-size: 1px;
+
+  --text-clr: rgb(255, 255, 255);
+  --primary-clr: rgb(255, 159, 28);
+  --secondary-clr: rgb(255, 191, 105);
+}
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* body LAYOUT */
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* body STYLES */
+body {
+  background-image: url(https://i.pinimg.com/564x/9d/0e/e1/9d0ee1c310942dd74aa8c1921b50ac7a.jpg);
+  background-size: cover;
+  background-size: 25%;
+  height: full;
+  text-align: justify;
+}
+
+/* .container LAYOUT */
+.container {
+  position: relative;
+}
+
+/* .card LAYOUT */
+.card {
+  padding: 2rem;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* .card STYLES */
+.card {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  border-radius: 8px;
+  opacity: 0.8;
+}
+
+/* .card-header LAYOUT */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card-name {
+  font-family: "Fredericka the Great", cursive;
+  font-weight: 300;
+  font-size: 2em;
+}
+
+/* .card-header-userinfo > p LAYOUT */
+.card-header-userinfo > p {
+  margin-top: 0.2rem;
+}
+
+/* .card-header-userinfo > button LAYOUT */
+.card-header-userinfo > button {
+  margin-top: 0.75rem;
+}
+
+/* button RESET */
+.card-invite-btn {
+  appearance: none;
+  border: none;
+  background: none;
+}
+
+/* .card-invite-btn STYLES */
+.card-invite-btn {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+
+  align-items: center;
+  background-color: white;
+  background-position: 0 0;
+  border: 0.5px solid rgb(6, 214, 160, 0.9);
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: rgb(6, 214, 160, 0.9);
+  cursor: pointer;
+  display: flex;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 33.4929px;
+  list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+  padding: 2px 12px;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  text-underline-offset: 1px;
+  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  word-break: break-word;
+}
+
+.card-invite-btn:active,
+.card-invite-btn:hover,
+.card-invite-btn:focus {
+  outline: 0;
+}
+
+.card-invite-btn:active {
+  background-color: rgb(6, 214, 160, 0.9);
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #ffffff;
+}
+
+.card-invite-btn:hover {
+  border-color: white;
+  color: white;
+  background-color: rgb(6, 214, 160, 0.9);
+}
+
+.card-invite-btn:active:hover,
+.card-invite-btn:focus:hover,
+.card-invite-btn:focus {
+  background-color: rgb(6, 214, 160, 0.9);
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #ffffff;
+}
+
+/* .card-img STYLES */
+.card-img {
+  width: 8rem;
+  border-radius: 50%;
+}
+
+/* .card-body LAYOUT */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* .card-paragraph LAYOUT */
+.card-paragraph {
+  margin-bottom: 0.5rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.card-paragraph__style {
+  font-family: "Faster One", cursive;
+  font-weight: lighter;
+  color: rgb(6, 214, 160, 0.9);
+}
+
+/* .card-tech-container LAYOUT */
+.card-tech-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.tech-icon {
+  /* padding: 0.5rem; */
+
+  align-items: center;
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.tech-icon:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.tech-icon:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.tech-icon:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.card-invite-btn:hover,
+.tech-icon:hover {
+  cursor: pointer;
+}
+
+/* .circle LAYOUT */
+.circle {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: -1;
+}
+
+.circle {
+  background-color: rgb(6, 214, 160, 0.9);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/* .circle-top POSITION */
+.circle-top {
+  top: -75px;
+  left: -75px;
+}
+
+/* .circle-bottom POSITION */
+.circle-bottom {
+  bottom: -100px;
+  right: -50px;
+}
